@@ -1,0 +1,7 @@
+print(" this is my first python program  for intrest calculation ")
+p = input("Enter  principle = \t ")
+r =input("Enter  rate  \t ")
+t = input("Enter time   \t ")
+res  =((p*r*t)/100)
+#print("result of caclulated  intrest is  = \t  %d"%res)
+print(" my principle amount is  %d \t and  time is  %d  \t and rate is %d \t then my intrest is  = \t %d "%(p,t,r,res))
