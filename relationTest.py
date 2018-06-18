@@ -7,7 +7,7 @@ else:
     print(" this is false ")
 no = int(input("Enter no \t  "))
 no1 = int(input("Enter  no1 \t "))
-if no >no1:
+if no >= no1:
     print(" no is greater then no1")
 else:
     print("no1 is greater ")
