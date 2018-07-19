@@ -1,28 +1,20 @@
-print("this is function test programm \n  ")
-
-def hell():
-    print("\t hello \n ")
-print("now  we are call our hello function ")
-hell()
-print("we ar after hello  \n")
-def per(balance , time , rate):
-    res = ((balance*time*rate)/100)
-    return res
-balance = int(input("Enter the balance  \t "))
-rate = int(input("Enter rate  =\t "))
-time =int(input("Enter time "))
-print(" this  is my result of simle interest  = \t %d"%per(balance,time,rate))
-print("now we are  at 0 ident ")
-
-def pers(balance , time , rate):
-    print(" simple intrest  =\t %d "%((balance*rate*time)/100))
-print("now we are call pers  ")
-pers(1200,2,10)
- 
-def seradd(*a):
+print("this is var argumetn test ")
+def addSeris(*ar):
     res =0
-    for i in a:
+    for i in ar:
         res =res+i
     return res
-
-print(" this is my serise addtion  = \t %d"%seradd( ))
+print("now call ")
+result  = addSeris(252,1,522,2,52,22,52,5,25,25,2)    
+print(" this is result  = \t %d"%result)
+def add(var=200 ,var2=100):
+    return var+var2
+result =add() # now the result of  add is 300
+res = add(4747,43737) #addition of passed arguemtn  
+print("resuls is = \t  %d"%result)
+print(" the value of res  =  \t  %d"%res)
+def keyArg(**ar):
+    for listkey in ar.keys():
+        print(" this is item passed by keyword arguemtn = \t %s"%str(ar[listkey]))
+print(" this si key word argument ")
+keyArg(name="jitu",latname="yadav")

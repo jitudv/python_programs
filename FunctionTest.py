@@ -1,0 +1,16 @@
+print("this  is my function test programm ")
+def salTax():
+    salary = int(input("pleas Enter your salary "))
+    tax=(salary*10)/100
+    return (salary -tax)
+print(" this  fix salalry  %d"%salTax())
+print(" this  fix salalry  %d"%salTax())
+print(" this  fix salalry  %d"%salTax())
+print(" this  fix salalry  %d"%salTax())
+print(" this  fix salalry  %d"%salTax())
+print(" this  fix salalry  %d"%salTax())
+print(" this  fix salalry  %d"%salTax())
+print(" this  fix salalry  %d"%salTax())
+print(" this  fix salalry  %d"%salTax())
+print(" this  fix salalry  %d"%salTax())
+print(" this  fix salalry  %d"%salTax())
