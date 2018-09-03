@@ -1,10 +1,12 @@
+#programm is writen by jitu yadav 
 import os
 import sys
 import io
 print(" this os last")
 #pid = os.getpid()
 #os.kill(pid,1)
-pid = os.fork()
+
+pid = os.fork() # sub process is created 
 if pid >0:
     print("yes sub is created ")
     print("id of new created process = \t  %d"%(pid))
@@ -26,4 +28,4 @@ for l in list:
     print("key is %s \t vlaue is  =\t %s"%(l,os.environ[l]))
 print("we are the end ")
 # this is the way of envieorment set 
-
+# os.environ['MVN_HOME']="/usr/lib/mvn/bin"

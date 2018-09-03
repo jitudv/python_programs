@@ -3,15 +3,14 @@ print(" this  is my lenear regression analysis  programm ")
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import tkinter 
+
 data_log = pd.DataFrame ({
 'length' : [94,74,147,58,86,94,63,86,69,72,128,85,82,86,88,72,74,61,90,89,68,76,114,90,78],
 'weight' : [130,51,640,28,80,110,33,90,36,38,366,84,80,83,70,61,54,44,106,84,39,42,197,102,57]
 })
-# ========================
-# Model for Original Data
-# ========================
- 
-# Get the linear models
+
+
 lm_original = np.polyfit(data_log.length, data_log.weight, 1)
  
 # calculate the y values based on the co-efficients from the model
@@ -40,11 +39,9 @@ lm_log_plot = pd.DataFrame({
 'length' : r_x,
 'weight' : r_y
 })
-
 # ========================
 # Model for Log Data
 # ========================
- 
 # Get the linear models
 lm_log = np.polyfit(data_log.length, data_log.weight, 1)
  
